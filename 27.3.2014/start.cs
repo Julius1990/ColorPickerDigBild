@@ -19,7 +19,7 @@ namespace _27._3._2014
 
         private void label1_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void label3_Click(object sender, EventArgs e)
@@ -40,10 +40,27 @@ namespace _27._3._2014
         private void Calc_Click(object sender, EventArgs e)
         {
             double brutto, steuer, netto;
-            brutto = Convert.ToDouble(this.TxtBrutto.Text);
-            steuer = Convert.ToDouble(this.TxtSteuer.Text);
-            netto = brutto * 100 / (100 + steuer);
-            this.TxtNetto.Text = netto.ToString();
+            if (double.TryParse(this.TxtBrutto.Text, out brutto))
+            {
+                if (double.TryParse(this.TxtSteuer.Text, out steuer))
+                {
+                    netto = brutto * 100 / (100 + steuer);
+                    this.TxtNetto.Text = netto.ToString();
+                }
+                else
+                {
+                    // Die Steuer-Eingabe ist nicht OK 
+                    this.TxtBrutto.Text = null;
+                    MessageBox.Show("Der Steuerwert ist ungültig");
+                }
+            }
+            else
+            {
+                // Die Brutto-Eingabe ist nicht OK 
+                this.TxtBrutto.Text = null;
+                MessageBox.Show("Der Bruttobetrag ist ungültig");
+            }
+
         }
     }
 }
