@@ -88,14 +88,14 @@
             this.TxtNetto.Name = "TxtNetto";
             this.TxtNetto.ReadOnly = true;
             this.TxtNetto.Size = new System.Drawing.Size(100, 20);
-            this.TxtNetto.TabIndex = 5;
+            this.TxtNetto.TabIndex = 8;
             // 
             // close
             // 
             this.close.Location = new System.Drawing.Point(132, 176);
             this.close.Name = "close";
             this.close.Size = new System.Drawing.Size(75, 23);
-            this.close.TabIndex = 7;
+            this.close.TabIndex = 6;
             this.close.Text = "Schließen";
             this.close.UseVisualStyleBackColor = true;
             this.close.Click += new System.EventHandler(this.button1_Click);
@@ -105,7 +105,7 @@
             this.Calc.Location = new System.Drawing.Point(25, 176);
             this.Calc.Name = "Calc";
             this.Calc.Size = new System.Drawing.Size(75, 23);
-            this.Calc.TabIndex = 8;
+            this.Calc.TabIndex = 5;
             this.Calc.Text = "Berechnen";
             this.Calc.UseVisualStyleBackColor = true;
             this.Calc.Click += new System.EventHandler(this.Calc_Click);

@@ -29,7 +29,8 @@ namespace _27._3._2014
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.Close();
+            if(MessageBox.Show("Wirklich beenden ?", Application.ProductName, MessageBoxButtons.YesNo, MessageBoxIcon.Question)==DialogResult.Yes)
+                this.Close();
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -62,5 +63,6 @@ namespace _27._3._2014
             }
 
         }
+
     }
 }
