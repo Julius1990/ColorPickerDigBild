@@ -36,6 +36,8 @@
             this.TxtNetto = new System.Windows.Forms.TextBox();
             this.close = new System.Windows.Forms.Button();
             this.Calc = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // TxtBrutto
@@ -110,11 +112,22 @@
             this.Calc.UseVisualStyleBackColor = true;
             this.Calc.Click += new System.EventHandler(this.Calc_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(246, 29);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(414, 271);
+            this.pictureBox1.TabIndex = 9;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(128);
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
             // start
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 261);
+            this.ClientSize = new System.Drawing.Size(672, 312);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.Calc);
             this.Controls.Add(this.close);
             this.Controls.Add(this.LblNetto);
@@ -125,6 +138,7 @@
             this.Controls.Add(this.TxtBrutto);
             this.Name = "start";
             this.Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -140,6 +154,7 @@
         private System.Windows.Forms.TextBox TxtNetto;
         private System.Windows.Forms.Button close;
         private System.Windows.Forms.Button Calc;
+        private System.Windows.Forms.PictureBox pictureBox1;
 
     }
 }
