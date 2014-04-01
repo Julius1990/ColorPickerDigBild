@@ -22,13 +22,23 @@ namespace _27._3._2014
         private void start_Load(object sender, EventArgs e)
         {
             this.AutoSize = true;   //Windows Form Größe automatisch anpassen
-            //this.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            this.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             this.Cursor = Cursors.Default;
 
             schwarz_rot();
             regenbogen();
+
+            
+
             pictureBox5.Enabled = false;
             //pictureBox5.MaximumSize = new System.Drawing.Size(1280, 768);
+
+
+            panel1.Size = new System.Drawing.Size(1, 1);
+            panel1.MaximumSize = new System.Drawing.Size(this.Size.Width + 700, this.Height + 350);
+            panel1.AutoSize = true;
+            pictureBox5.Size = new System.Drawing.Size(panel1.Size.Width - 10, panel1.Size.Height-10);
+            panel1.AutoScroll = true;
             pictureBox5.SizeMode = PictureBoxSizeMode.AutoSize;
 
         }
@@ -242,6 +252,8 @@ namespace _27._3._2014
         private void pictureBox5_mouseOver(object sender, System.Windows.Forms.MouseEventArgs e)        //PictureBox 4
         {
             Cursor = Cursors.Cross;
+
+            
 
             Bitmap myBit=(Bitmap)pictureBox5.Image;
             Color myColor = myBit.GetPixel(e.X, e.Y);

@@ -48,11 +48,13 @@
             this.button1 = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // pictureBox2
@@ -190,7 +192,6 @@
             this.pictureBox4.TabIndex = 29;
             this.pictureBox4.TabStop = false;
             this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
-            //this.pictureBox4.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureBox4_mouseOver);
             // 
             // openFileDialog1
             // 
@@ -221,19 +222,28 @@
             // 
             // pictureBox5
             // 
-            this.pictureBox5.Location = new System.Drawing.Point(273, 13);
+            this.pictureBox5.Location = new System.Drawing.Point(3, 3);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox5.Size = new System.Drawing.Size(233, 195);
             this.pictureBox5.TabIndex = 32;
             this.pictureBox5.TabStop = false;
             this.pictureBox5.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureBox5_mouseOver);
+            // 
+            // panel1
+            // 
+            this.panel1.AutoScroll = true;
+            this.panel1.Controls.Add(this.pictureBox5);
+            this.panel1.Location = new System.Drawing.Point(273, 13);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(254, 216);
+            this.panel1.TabIndex = 33;
             // 
             // start
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(693, 321);
-            this.Controls.Add(this.pictureBox5);
+            this.ClientSize = new System.Drawing.Size(532, 238);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox3);
@@ -259,6 +269,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -286,6 +297,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.Panel panel1;
 
     }
 }
