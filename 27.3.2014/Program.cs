@@ -17,6 +17,9 @@ namespace _27._3._2014
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new start());
+
+            
+            
         }
     }
 }
