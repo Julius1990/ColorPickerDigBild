@@ -31,8 +31,7 @@ namespace _27._3._2014
             regenbogen();
             
         }
-
-
+        
         public void start_Load(object sender, EventArgs e)
         {
             this.AutoSize = true;   //Windows Form Größe automatisch anpassen
@@ -43,9 +42,7 @@ namespace _27._3._2014
             pictureBox6.Enabled = false;
             //pictureBox5.MaximumSize = new System.Drawing.Size(1280, 768);
 
-
             pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
-
         }
 
         //-----------------------------------------------------------------------------------------------------------------------------
@@ -324,22 +321,11 @@ namespace _27._3._2014
 
         private void ResizeAndDisplayImage(PictureBox pix)
         {
-            // Set the backcolor of the pictureboxes
-
             Color _BackColor = Color.FromArgb(255, 255, 255);
 
             pix.BackColor = _BackColor;
 
-            // If _OriginalImage is null, then return. This situation can occur
-
-            // when a new backcolor is selected without an image loaded.
             Image _OriginalImage = Image.FromFile(openFileDialog1.FileName);
-
-            // sourceWidth and sourceHeight store
-            // the original image's width and height
-
-            // targetWidth and targetHeight are calculated
-            // to fit into the picImage picturebox.
 
             int sourceWidth = _OriginalImage.Width;
             int sourceHeight = _OriginalImage.Height;
